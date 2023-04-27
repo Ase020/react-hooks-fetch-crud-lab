@@ -31,11 +31,9 @@ function QuestionForm({ setQuestions }) {
             "Content-Type": "application/json",
          },
          body: JSON.stringify(questionObj),
-      })
-         .then((res) => res.json())
-         .then((data) => {
-            setQuestions(data);
-         });
+      });
+
+      setFormData(formData);
    }
 
    return (
